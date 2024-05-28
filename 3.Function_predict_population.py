@@ -13,15 +13,13 @@ def predict_population(country, year):
                         '1990 Population': '1990',
                         '1980 Population': '1980',
                         '1970 Population': '1970'})
-    # print(df.head(5).to_string())
+
 
     country_population = df.loc[df['Country/Territory']==country]
     country_population.drop(['Rank','CCA3','Capital','Continent', 'Area (km²)',
             'Density (per km²)', 'Growth Rate', 'World Population Percentage'],axis=1, inplace=True) #1 is the axis number (0 for rows and 1 for columns.)
     country_population = country_population.T
-    print(country_population.head(8))
-    #china_population.dropna(inplace=True) #removing rows with null values
-    country_population = country_population.reset_index().rename(columns={41:'population','index':'year'})
+    country_population = country_population.reset_index()
     #china_population.drop([0])
     print(country_population.head(8))
 
@@ -34,10 +32,10 @@ def predict_population(country, year):
     model.fit(X_train, y_train)
 
     y_pred = model.predict([[year]]) #y_predict = regressor.predict(X_test)
-    print(f'The population of {country} in {year} is predicted to reach {y_pred}')
-    print(f'The accuracy of the model is {model.score(X_test, y_test)}')
+    print(f'The population of {country} in {year} is estimated at {y_pred}.')
+    print(f'The accuracy of the model is {model.score(X_test, y_test)}.')
 
 
-predict_population('China', 2030)
-# predict_population('India', 2030)
+# predict_population('China', 2019)
+predict_population('India', 2019)
 # predict_population('United States', 2030)
