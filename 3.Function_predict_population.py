@@ -21,7 +21,6 @@ def predict_population(country):
     country_population = country_population.T
     country_population = country_population.reset_index().set_axis(['Year', 'Population'], axis='columns')
     country_population.drop(0, axis=0, inplace=True)
-    # print(country_population.head(8))
 
     X = country_population.iloc[:, 0].values.reshape(-1, 1)
     y = country_population.iloc[:, 1].values.reshape(-1, 1)
@@ -31,6 +30,7 @@ def predict_population(country):
     model = LinearRegression()
     model.fit(X_train, y_train)
 
+    print(f"The linear regression model is applied to {country}'s population data.")
     print(f'The accuracy of the model is {model.score(X_test, y_test)}.')
 
 

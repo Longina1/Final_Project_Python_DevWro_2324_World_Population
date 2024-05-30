@@ -24,7 +24,7 @@ print(china_population)
 china_population = china_population.T
 print(china_population.head(8))
 
-china_population = china_population.reset_index().rename(columns={'index':'Year', 41:'Population'})
+china_population = china_population.reset_index().set_axis(['Year', 'Population'], axis='columns')
 china_population.drop(0, axis=0, inplace=True)
 print(china_population.head(8))
 

@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91a2b97e-dee4-49c3-aa42-bd921fe007bb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2.Linear_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/2.Linear_regression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.Function_predict_population.py" beforeDir="false" afterPath="$PROJECT_DIR$/3.Function_predict_population.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Linear_regression.model" beforeDir="false" afterPath="$PROJECT_DIR$/Linear_regression.model" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +37,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.1.Data_analysis.executor": "Run",
     "Python.2.Linear_regression.executor": "Run",
+    "Python.3.Function_predict_population.executor": "Run",
     "Python.Data analysis.executor": "Run",
     "Python.Linear regression.executor": "Run",
     "Python.Linear_regression.executor": "Run",
@@ -44,7 +47,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/longi/PycharmProjects/Final_Project_PythonDevWro_2324"
+    "last_opened_file_path": "C:/Users/longi/PycharmProjects/Final_Project_Python_DevWro_2324_World_Population"
   }
 }]]></component>
   <component name="RecentsManager">
